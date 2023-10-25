@@ -1,29 +1,22 @@
 function calcular() {
     var n1 = document.getElementById('txtnume')
     var n2 = document.getElementById('txtdeno')
-    n1 = Number(n1.value)
-    n2 = Number(n2.value)
     var res = 1
-    if (n1 == 0 || n2 == 0){
-        var mdc = "Insira os dados necessários"
-        var Dmdc = document.getElementById('mdc')
-        Dmdc.innerHTML = `<strong>${mdc}</strong>`
-    }
-    else{
+    while (res != 0) {
+        n1 = Number(n1.value)
+        n2 = Number(n2.value)
+        if (n1 <= n2) {
+            var maior = n2
+            var menor = n1
+        } else {
+            var maior = n1
+            var menor = n2
+        }
         while (res != 0) {
-            if (n1 <= n2) {
-                var maior = n2
-                var menor = n1
-            } else {
-                var maior = n1
-                var menor = n2
-            }
-            while (res != 0) {
-                var razão = parseInt(maior / menor)
-                res = maior - (menor * razão)
-                maior = menor
-                menor = res
-            }
+            var razão = parseInt(maior / menor)
+            res = maior - (menor * razão)
+            maior = menor
+            menor = res
         }
     }
     var mdc = maior
