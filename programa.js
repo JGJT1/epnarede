@@ -32,3 +32,11 @@ function calcular() {
     var Dfração = document.getElementById('fracao')
     Dfração.innerHTML = `A fração simplificada é: ${s1}/${s2}`
     }
+
+function clickMenu(){
+    if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+    } else{
+            itens.style.display = 'block'
+    }
+}
