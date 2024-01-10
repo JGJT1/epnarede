@@ -11,7 +11,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    overflow-x: hidden;
 }
 
 a{
@@ -64,7 +63,6 @@ menu a:hover{
     display: block;
     padding: 10px;
     cursor: pointer;
-    width: 100%;
     z-index: 1000;
 }
 
@@ -124,8 +122,7 @@ footer{
 
 #itens{
     display: none;
-    position: fixed;
-    top: 44px; /* ou o valor que você achar adequado */
+    top: 44px;
     left: 0;
     width: 100%;
     background-color: black;
