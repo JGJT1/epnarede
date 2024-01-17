@@ -21,10 +21,9 @@ Grandes telas: 1200px
         padding: 0% 15%;
     }
 
-    #itens{
+    #menu{
         display: block;
-    }
-    
+    }    
     #logo img{
         height: 650px;
     }
@@ -34,6 +33,7 @@ Grandes telas: 1200px
     #itens{
         background-color: #79ACD9;
         text-align: center;
+        display: block;
     }
     #itens li{
         display: inline-block;
@@ -51,9 +51,14 @@ Grandes telas: 1200px
     main p{
         padding: 0% 15%;
     }
+
+    #menu{
+        display: block;
+    }
     #itens{
         background-color: #79ACD9;
         text-align: center;
+        display: block;
     }
     #itens li{
         display: inline-block;
@@ -69,9 +74,6 @@ Grandes telas: 1200px
     #burguer{
         display: none;
     }
-    #itens{
-        background-color: #79ACD9;
-    }
     #itens li:hover{
         background-color: #739FCE;
     }
@@ -82,9 +84,13 @@ Grandes telas: 1200px
         padding: 0% 15%;
     }
 
+    #menu{
+        display: block;
+    }
     #itens{
         background-color: #79ACD9;
         text-align: center;
+        display: block;
     }
     #itens li{
         display: inline-block;
@@ -98,9 +104,6 @@ Grandes telas: 1200px
     }
     #burguer{
         display: none;
-    }
-    #itens{
-        background-color: #79ACD9;
     }
     #itens li:hover{
         background-color: #739FCE;
