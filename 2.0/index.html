@@ -10,7 +10,7 @@
     <script src="script.js"></script>
     <title>Ep na Rede</title>
 </head>
-<body>
+<body onresize="mudouTam()">
     <header>
         <section id="menu">
             <span id='burguer' class="material-icons" onclick="clickMenu()">menu</span>
@@ -45,9 +45,17 @@
         </section>
         <section id="imagens_pag01">
             <h1>Logotipo do projeto</h1>
-            <img src="../imagens/pagina_inicial/p/logo_EP_na_Rede(P).jpg" alt="">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../imagens/pagina_inicial/g/logo_EP_na_Rede(G).jpg">
+                <source media="(min-width: 768px)" srcset="../imagens/pagina_inicial/m/logo_EP_na_Rede(M).jpg" type="image/jpeg">
+                <img src="../imagens/pagina_inicial/p/logo_EP_na_Rede(P).jpg" alt="">
+            </picture>            
             <h1>Primeira reunião registrada no dia 20/04/2023</h1>
-            <img src="../imagens/pagina_inicial/p/primeira_reuniao(P).jpg" alt="">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../imagens/pagina_inicial/g/primeira_reuniao(G).jpg">
+                <source media="(min-width: 768px)" srcset="../imagens/pagina_inicial/m/primeira_reuniao(M).jpg" type="image/jpeg">
+                <img src="../imagens/pagina_inicial/p/primeira_reuniao(P).jpg" alt="">
+            </picture>
         </section>
     </main>
 
