@@ -17,6 +17,14 @@ Grandes telas: 1200px
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px){/*Tablet*/
+    main p{
+        padding: 0% 15%;
+    }
+
+    #itens{
+        display: block;
+    }
+    
     #logo img{
         height: 650px;
     }
@@ -25,13 +33,14 @@ Grandes telas: 1200px
     }
     #itens{
         background-color: #79ACD9;
+        text-align: center;
     }
     #itens li{
         display: inline-block;
+        text-align: center;
         border-radius: 40px;
         border: none;
-        margin-left: 10px;
-        margin-right: 90px;
+        margin: 0px 50px;
     }
     #itens li:hover{
         background-color: #739FCE;
@@ -39,6 +48,21 @@ Grandes telas: 1200px
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
+    main p{
+        padding: 0% 15%;
+    }
+    #itens{
+        background-color: #79ACD9;
+        text-align: center;
+    }
+    #itens li{
+        display: inline-block;
+        text-align: center;
+        border-radius: 40px;
+        border: none;
+        margin: 0px 50px;
+    }
+    
     #logo img{
         height: 700px;
     }
@@ -48,19 +72,27 @@ Grandes telas: 1200px
     #itens{
         background-color: #79ACD9;
     }
-    #itens li{
-        display: inline-block;
-        border-radius: 40px;
-        border: none;
-        margin-left: 10px;
-        margin-right: 90px;
-    }
     #itens li:hover{
         background-color: #739FCE;
     }
 }
 
 @media screen and (min-width: 1200px){/*Telas Grandes*/
+    main p{
+        padding: 0% 15%;
+    }
+
+    #itens{
+        background-color: #79ACD9;
+        text-align: center;
+    }
+    #itens li{
+        display: inline-block;
+        text-align: center;
+        border-radius: 40px;
+        border: none;
+        margin: 0px 50px;
+    }
     #logo img{
         height: 720px;
     }
@@ -69,13 +101,6 @@ Grandes telas: 1200px
     }
     #itens{
         background-color: #79ACD9;
-    }
-    #itens li{
-        display: inline-block;
-        border-radius: 40px;
-        border: none;
-        margin-left: 10px;
-        margin-right: 90px;
     }
     #itens li:hover{
         background-color: #739FCE;
