@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*
+#79ACD9 azul
+#739FCE azul pouco mais escuro
+#238C3D verde escuro
+#96D932 verde claro
+#F2A03D laranja
+*/
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+#itens ,#itens ul{
+    margin: 0px;
+    padding: 0px;
+}
+#burguer{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    background-color: #F2A03D;
+    cursor: pointer;
+}
+#burguer:hover{
+    background-color: white;
+}
+#itens{
+    display: none;
+}
+
+#menu li{
+    background-color: #79ACD9;
+    padding: 10px;
+    border: 1px solid #3e82cb;
+    list-style-type: none;
+    text-align: center;
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+
+#texto{
+    color: white;
+    background-color: #00000080;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto h1{
+    font-size: 3em;
+}
+
+#texto h2{
+    font-style: italic;
+    font-family: serif;
+}
+
+#logo{
+    position: relative;
+}
+
+#logo img{
+    display: block;
+    width: 100%;
+}
+
+main h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+main p{
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#imagens_pag01{
+    text-align: center;
+}
+
+footer{
+    background-color: #79ACD9;
+}
+
+footer p{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
