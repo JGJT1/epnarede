@@ -44,6 +44,10 @@ html, body{
     color: white;
 }
 
+#menu li:hover{
+    background-color: black;
+}
+
 #texto{
     color: white;
     background-color: #00000080;
@@ -86,6 +90,7 @@ main p{
     text-indent: 20px;
     text-align: justify;
     line-height: 1.5em;
+    padding: 10px;
 }
 
 #imagens_pag01{
@@ -103,4 +108,29 @@ footer p{
     text-align: center;
     font-size: 1em;
     font-weight: bold;
+}
+
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+.adendo{
+    color: gray;
+    font-style: italic;
+}
+
+img{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.img_cont{
+    box-shadow: 1px 1px 4px #00000080;
+    border-radius: 3px;
 }
