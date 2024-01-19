@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <script src="script.js"></script>
+    <style>
+        img{
+            padding: 20px 0px 20px 0px;
+        }
+        ul{
+            padding: 0px;
+            list-style: none;
+        }
+
+        ul li{
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        ul li::before{
+            content: '\2022';
+            margin-right: 10px;
+        }
+        
+    </style>
+    <title>Cursos</title>
+</head>
+<body onresize="mudouTam()">
+    <header>
+        <section id="menu">
+            <span id='burguer' class="material-icons" onclick="clickMenu()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="escola.html">Escola</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="corpo_docente.html">Corpo docente</a></li>
+                </ul>
+            </menu>
+        </section>
+    </header>
+
+    <main>
+        <article>
+            <h1>Corpo docente</h1>
+            <h2>Administração</h2>
+            <h3>Diretor(a):</h3>
+            <ul><li>Otília Cristiane Bezerra e Silva</li></ul>
+            <img src="imagens/geral_final/otila.jpg" alt="">
+            <h3>Coordenador(a):</h3>
+            <ul>
+                <li>Jeane Ferreira Pereira Rocha</li>
+                <img src="imagens/geral_final/jeane.jpg" alt="">
+                <li>Maria Edna Nogueira</li>
+                <img src="imagens/geral_final/edna.jpg" alt="">
+                <li>Paulo Rogério Nunes Costa</li>
+                
+                
+                <img src="imagens/geral_final/paulo.jpg" alt="">
+            </ul>
+            <h3>Secretária: </h3>
+            <ul><li>Eliane dos Santos da Cunha</li></ul>
+            <img src="imagens/geral_final/eliane.jpg" alt="">
+            <h3>Assesora Financeira: </h3>
+            <ul><li>Francisca Lidiane F.Saraiva</li></ul>
+            <img src="imagens/geral_final/lidiane.jpg" alt="">
+            <h2>Professores da base comum e diversificada</h2>
+            <h3>Linguagens e Códigos</h3>
+            <ol>
+                <li>Língua Portuguesa</li>
+                <ul>
+                    <li class="professores">Vládia</li>
+                    <li>Terezinha</li>
+                </ul>
+                <li>Lingua Inglesa</li>
+                <li>Lingua Espanhola</li>
+                <li>Artes</li>
+                <li>Educação Física</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>
+        <p>[Epnarede@gmail.com] | [@epmariacarmemoficial]</p>
+    </footer>
+</body>
+</html>
