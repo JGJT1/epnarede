@@ -132,6 +132,8 @@ h2{
 }
 
 .img_cont{
+    display: block;
+    margin: auto;
     box-shadow: 1px 1px 4px #00000080;
     border-radius: 3px;
 }

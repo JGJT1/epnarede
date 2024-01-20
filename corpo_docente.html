@@ -9,25 +9,44 @@
     <link rel="stylesheet" href="estilos/media-queries.css">
     <script src="script.js"></script>
     <style>
-        img{
-            padding: 20px 0px 20px 0px;
-        }
         ul{
             padding: 0px;
             list-style: none;
         }
 
-        ul li{
+        main > article > ul > li{
+            margin: 16px 0px 16px 0px;
+        }
+
+        main > article > ol > li{
+            font-size: 1.3em;
+        }
+
+        main li{
             font-size: 1.5em;
             font-weight: bold;
             text-align: center;
         }
 
-        ul li::before{
+        main > article > ul > li::before, main > article > ol > ul > li:before{
             content: '\2022';
             margin-right: 10px;
         }
-        
+        ol{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+        }
+
+        ol > li{
+            display:inline-block;
+            padding: 10px;
+            background-color: #238C3D;
+            border-radius: 10px;
+            font-weight: bolder;
+            margin: 10px 0px 10px 0px;
+        }
     </style>
     <title>Cursos</title>
 </head>
@@ -53,37 +72,164 @@
             <h2>Administração</h2>
             <h3>Diretor(a):</h3>
             <ul><li>Otília Cristiane Bezerra e Silva</li></ul>
-            <img src="imagens/geral_final/otila.jpg" alt="">
+            <img class="img_cont" src="imagens/geral_final/otila.jpg" alt="">
             <h3>Coordenador(a):</h3>
             <ul>
                 <li>Jeane Ferreira Pereira Rocha</li>
-                <img src="imagens/geral_final/jeane.jpg" alt="">
+                <img class="img_cont" src="imagens/geral_final/jeane.jpg" alt="">
                 <li>Maria Edna Nogueira</li>
-                <img src="imagens/geral_final/edna.jpg" alt="">
+                <img class="img_cont corpo_docente" src="imagens/geral_final/edna.jpg" alt="">
                 <li>Paulo Rogério Nunes Costa</li>
                 
                 
-                <img src="imagens/geral_final/paulo.jpg" alt="">
+                <img class="img_cont" src="imagens/geral_final/paulo.jpg" alt="">
             </ul>
             <h3>Secretária: </h3>
             <ul><li>Eliane dos Santos da Cunha</li></ul>
-            <img src="imagens/geral_final/eliane.jpg" alt="">
+            <img class="img_cont" src="imagens/geral_final/eliane.jpg" alt="">
             <h3>Assesora Financeira: </h3>
             <ul><li>Francisca Lidiane F.Saraiva</li></ul>
-            <img src="imagens/geral_final/lidiane.jpg" alt="">
+            <img class="img_cont" src="imagens/geral_final/lidiane.jpg" alt="">
             <h2>Professores da base comum e diversificada</h2>
             <h3>Linguagens e Códigos</h3>
-            <ol>
-                <li>Língua Portuguesa</li>
+                <ol>
+                    <li>1. Língua Portuguesa</li>
+                        <ul>
+                            <li class="professores">Vládia</li>
+                            <li>Terezinha</li>
+                            <li>Luís Claúdio de Almeida Ramos</li>
+                        </ul>
+                    <li>2. Lingua Inglesa</li>
+                        <ul>
+                            <li>Messalina Karoline Oliveira Lod</li>
+                        </ul>
+                    <li>3. Lingua Espanhola</li>
+                        <ul>
+                            <li>Lívia Maria do Rego Pinheiro</li>
+                        </ul>
+                    <li>4. Artes</li>
+                        <ul>
+                            <li>Luís Claúdio de Almeida Ramos</li>
+                        </ul>
+                    <li>5. Educação Física</li>
+                        <ul>
+                            <li>Yana Santos de Castro</li>
+                        </ul>
+                </ol>
+            <h3>Ciências Humanas</h3>
+                <ol>
+                    <li>1. Filosofia</li>
+                        <ul>
+                            <li>Nailson Lima dos Santos</li>
+                        </ul>
+                    <li>2. Geografia</li>
+                        <ul>
+                            <li>Antônio Airton da Silva Ferreira</li>
+                        </ul>
+                    <li>3. História</li>
+                        <ul>
+                            <li>Maria Karuline da Costa Silva</li>
+                        </ul>
+                    <li>4. Sociologia</li>
+                        <ul>
+                            <li>Joyce Andrade Ferreira de Sousa</li>
+                        </ul>
+                </ol>
+            <h3>Ciências da Natureza</h3>
+                <ol>
+                    <li>1. Biologia</li>
+                        <ul>
+                            <li>Antônio Xavier de Oliveira Filho</li>
+                        </ul>
+                    <li>2. Física</li>
+                        <ul>
+                            <li>Francisco Wendel Cipriano de Oliveira</li>
+                        </ul>
+                    <li>3. Química</li>
+                        <ul>
+                            <li>Marlon Bezerra da Silva Junior</li>
+                        </ul>
+                </ol>
+            <h3>Ciências Exatas</h3>
+                <ol>
+                    <li>1. Matemática</li>
+                        <ul>
+                            <li>Felipe Guimarães Ferreira</li>
+                            <li>Francisco Aristófanes Soares de Sousa</li>
+                            <li>José Nilton Garcia do Nascimento</li>
+                        </ul>
+                </ol>
+            <h3>Base Diversificada</h3>
+                <ol>
+                    <li>1. Informática Básica</li>
+                        <ul>
+                            <li>Allan Kemps Cerqueira Lima</li>
+                        </ul>
+                    <li>2. Mundo do Trabalho</li>
+                        <ul>
+                            <li>Antônio Airton da Silva Ferreira</li>
+                        </ul>
+                    <li>3. Projeto de Vida</li>
+                        <ul>
+                            <li>José Nilton Garcia do Nascimento</li>
+                        </ul>
+                </ol>
+            <h2>Base Técnica</h2>
+            <h3>Química</h3>
                 <ul>
-                    <li class="professores">Vládia</li>
-                    <li>Terezinha</li>
+                    <li>Francica Eliene Sobral Coelha</li>
+                    <li>Tiago Rodriguês dos Santos</li>
                 </ul>
-                <li>Lingua Inglesa</li>
-                <li>Lingua Espanhola</li>
-                <li>Artes</li>
-                <li>Educação Física</li>
-            </ol>
+            <h3>Secretariado</h3>
+                <ul>
+                    <li>Cristiane Jamile de Sousa Lima</li>
+                    <li>Heline Helena Peixoto Braga</li>
+                    <li>Maria Lucimar Neves de Almeida</li>
+                </ul>
+            <h3>Têxtil</h3>
+                <ul>
+                    <li>Larrisa Krissia Oliveira de Sousa</li>
+                    <li>Marcos Sabino de Oliveira Júnior</li>
+                </ul>
+            <h3>Vestuário</h3>
+                <ul>
+                    <li>Larrisa Krissia Oliveira de Sousa</li>
+                    <li>Leidiane Alves do Nascimento</li>
+                </ul>
+            <h3>Desenvolvimento de Sistemas</h3>
+                <ul>
+                    <li>Ana Léa Farias Paiva</li>
+                </ul>
+            <h2>Colaboradores</h2>
+            <h3>Secretaria</h3>
+                <ul>
+                    <li>Antonia Bruna Oliveira Lemos</li>
+                    <li>Maria Luzia dos Santos Cunha</li>
+                </ul>
+            <h3>Conservação Patrimônial</h3>
+                <ul>
+                    <li>Antonia Elenilce Ribeiro da Silva</li>
+                    <li>Edson Duarte Pereira</li>
+                    <li>Fabiana Farias de Olveira</li>
+                </ul>
+            <h3>Portaria</h3>
+                <ul>
+                    <li>Daniel Alves de Lima</li>
+                </ul>
+            <h3>Cozinha (CHEF)</h3>
+                <ul>
+                    <li>Arimatéia Jerônimo Peroba</li>
+                </ul>
+            <h3>Cozinha</h3>
+                <ul>
+                    <li>Breno da Silva Brito</li>
+                    <li>José Maria Saraiva da Silva</li>
+                    <li>Zaquel da Silva Lopes</li>
+                </ul>
+            <h3>Segurança</h3>
+                <ul>
+                    <li>Francisco Marlon Pinheiro</li>
+                </ul>
         </article>
     </main>
 
