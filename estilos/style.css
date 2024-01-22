@@ -97,7 +97,6 @@ input:checked ~ #lista {
     display: block;
     text-align: center;
     position: relative;
-    height: auto;
     background-color: #79ACD9;
     border: 1px solid #3E82CB;
     padding: 10px;
