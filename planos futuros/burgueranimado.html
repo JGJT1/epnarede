@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gos</title>
+    <style>
+        * ,*::before, *::after {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu {
+            position: relative;
+            background-color: aqua;
+            width: 100vw;
+            height: 40px;
+        }
+
+        .burguer {
+            display: block;
+            margin: auto;
+            background: black;
+            width: 30px;
+            height: 2px;
+            position: relative;
+            top: 20px;
+            transition: .5s ease-in-out;
+        }
+
+        .burguer::after,
+        .burguer::before {
+            content: ' ';
+            background-color: black;
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            transition: .5s ease-in-out;
+        }
+
+        .burguer::after {
+            bottom: 5px;
+        }
+
+        .burguer::before {
+            top: 5px;
+        }
+
+        input:checked ~ label .burguer {
+            transform: rotate(45deg);
+            transition: .5s ease-in-out;
+        }
+
+        input:checked ~ label .burguer::after {
+            transform: rotate(90deg);
+            transition: .5s ease-in-out;
+            bottom: 0;
+        }
+
+        input:checked ~ label .burguer::before {
+            transform: rotate(90deg);
+            transition: .5s ease-in-out;
+            top: 0;
+        }
+
+        input:checked ~ #lista {
+            max-height: 200px;
+        }
+
+        #lista {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        li {
+            display: block;
+            text-align: center;
+            position: relative;
+            background-color: gray;
+            border: 1px solid black;
+            padding: 10px;
+            opacity: 1;
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input id="in-burguer" type="checkbox">
+        <label for="in-burguer">
+            <div class="menu">
+                <span class="burguer"></span>
+            </div>
+        </label>
+        <ul id="lista">
+            <li><a href="#">op1</a></li>
+            <li><a href="#">op2</a></li>
+        </ul>
+    </header>
+    <main>
+    </main>
+</body>
+</html>

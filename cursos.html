@@ -7,9 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
-    <script src="script.js"></script>
     <style>
-        #itens li:nth-child(4){
+        #lista li:nth-child(4){
             background-color: #F2A03D;
         }
     </style>
@@ -17,17 +16,20 @@
 </head>
 <body onresize="mudouTam()">
     <header>
-        <section id="menu">
-            <span id='burguer' class="material-icons" onclick="clickMenu()">menu</span>
-            <menu id="itens">
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
+        <section class="corpo1">
+            <input id="in-burguer" type="checkbox">
+            <label for="in-burguer">
+            <div class="menu">
+                <span class="burguer"></span>
+            </div>
+            </label>
+                <ul id="lista">
+                    <li><a href="index.html">Página inicial</a></li>
                     <li><a href="escola.html">Escola</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="cursos.html">Cursos</a></li>
                     <li><a href="corpo_docente.html">Corpo docente</a></li>
                 </ul>
-            </menu>
         </section>
     </header>
 

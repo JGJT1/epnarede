@@ -29,7 +29,7 @@ label {
 .menu {
     position: relative;
     background-color: #238C3D;
-    width: 100%;
+    width: 100vw;
     height: 50px;
 }
 
@@ -196,7 +196,6 @@ img{
 
 h2{
     text-align: center;
-    margin: 20px 0px 20px 0px;
 }
 
 .img_cont{
@@ -217,7 +216,6 @@ main h3{
     font-size: 1.4em;
     background-color: #79ACD9;
     padding: 10px 0px 10px 0px;
-    margin: 20px 0px 20px 0px;
 }
 
 main h4{
