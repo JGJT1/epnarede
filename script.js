@@ -4,6 +4,6 @@ function ajustarPadding(){
     if(inburguer.checked){
         lista.style.paddingBottom = '0px'
     }else{
-        lista.style.paddingBottom = '10px'
+        lista.style.paddingBottom = '0px'
     }
 }
