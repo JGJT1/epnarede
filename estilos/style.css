@@ -87,7 +87,7 @@ input:checked ~ label .burguer::before {
     --numero-de-itens: 5;
 }
 input:checked ~ #lista{
-    max-height: calc(40px * var(--numero-de-itens));
+    max-height: calc(1000px * var(--numero-de-itens));
 }
 #lista {
     max-height: 0;
