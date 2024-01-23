@@ -18,7 +18,8 @@ Grandes telas: 1200px
 
 @media screen and (min-width: 768px) and (max-width: 992px){/*Tablet*/
     main p{
-        padding: 0% 15%;
+        padding: 10px 15%;
+        font-size: 18px;
     }
 
     .menu{
@@ -56,7 +57,8 @@ Grandes telas: 1200px
 
 @media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
     main p{
-        padding: 0% 15%;
+        padding: 10px 15%;
+        font-size: 20px;
     }
 
     .menu{
@@ -94,7 +96,8 @@ Grandes telas: 1200px
 
 @media screen and (min-width: 1200px){/*Telas Grandes*/
     main p{
-        padding: 0% 15%;
+        padding: 10px 15%;
+        font-size: 20px;
     }
 
     .menu{
