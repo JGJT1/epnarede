@@ -87,12 +87,12 @@ input:checked ~ label .burguer::before {
     --numero-de-itens: 5;
 }
 input:checked ~ #lista{
-    max-height: calc(50px * var(--numero-de-itens));
+    max-height: calc(40px * var(--numero-de-itens));
 }
 #lista {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s ease-in-out;
+    transition: max-height .5s ease-in-out;
 }
 
 #lista li {
