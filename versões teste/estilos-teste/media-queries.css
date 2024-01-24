@@ -29,9 +29,7 @@ Grandes telas: 1200px
     .menu:hover{
         background-color: #79ACD9;
     }
-    #logo img{
-        height: 650px;
-    }
+    
     .burguer{
         display: none;
     }
@@ -55,6 +53,9 @@ Grandes telas: 1200px
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
+    #texto{
+        font-size: 1.5em;
+    }
     main p{
         padding: 0% 15%;
     }
@@ -67,9 +68,7 @@ Grandes telas: 1200px
     .menu:hover{
         background-color: #79ACD9;
     }
-    #logo img{
-        height: 650px;
-    }
+    
     .burguer{
         display: none;
     }
@@ -93,6 +92,12 @@ Grandes telas: 1200px
 }
 
 @media screen and (min-width: 1200px){/*Telas Grandes*/
+    header{
+        background-image: linear-gradient(to top , #94b0ce, #1b80d8);
+    }
+    #texto{
+        font-size: 1.5em;
+    }
     main p{
         padding: 0% 15%;
     }
@@ -106,7 +111,8 @@ Grandes telas: 1200px
         background-color: #79ACD9;
     }
     #logo img{
-        height: 650px;
+        height: 740.4px;
+        width: auto;
     }
     .burguer{
         display: none;
