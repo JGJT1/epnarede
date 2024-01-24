@@ -112,7 +112,8 @@ input:checked ~ #lista{
 }
 
 #lista a{
-    text-decoration: none; 
+    text-decoration: none;
+    padding: 10px 25px 10px 25px; 
 }
 
 #texto{
