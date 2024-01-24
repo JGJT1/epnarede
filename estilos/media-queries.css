@@ -17,6 +17,9 @@ Grandes telas: 1200px
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px){/*Tablet*/
+    #lista > li > a{
+        padding: 0px;
+    }
     main p{
         padding: 10px 15%;
         font-size: 18px;
