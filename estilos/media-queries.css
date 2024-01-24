@@ -101,6 +101,12 @@ Grandes telas: 1200px
 }
 
 @media screen and (min-width: 1200px){/*Telas Grandes*/
+    header{
+        background-image: linear-gradient(to top , #94b0ce, #1b80d8);
+    }
+    #texto{
+        font-size: 1.5em;
+    }
     #lista > li > a{
         padding: 0px;
     }
@@ -118,7 +124,8 @@ Grandes telas: 1200px
         background-color: #79ACD9;
     }
     #logo img{
-        height: 650px;
+        height: 740.4px;
+        width: auto;
     }
     .burguer{
         display: none;
