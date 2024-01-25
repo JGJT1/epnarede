@@ -107,6 +107,15 @@ Grandes telas: 1200px
     #texto{
         font-size: 1.5em;
     }
+    article h1{
+        font-size: 2.7em;
+    }
+    article h2{
+        font-size: 2.5em;
+    }
+    article h3{
+        font-size: 2.2em;
+    }
     #lista > li > a{
         padding: 0px;
     }
