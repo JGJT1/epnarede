@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .side-bar{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: .5s;
+            padding-top: 60px;
+        }
+        .side-bar a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            margin: 20px 0px;
+            transition: .3s;
+        }
+        .side-bar a:hover{
+            color: #f1f1f1;
+        }
+        .side-bar .close-btn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 32px;
+            margin-left: 50px;
+        }
+        .menu-btn{
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #111;
+            color: #818181;
+        }
+        .menu-btn:hover{
+            color: #f1f1f1;
+        }
+        .material-symbols-outlined{
+            position: relative;
+            top: 5px;
+        }
+        .back-button{
+            position: absolute;
+            color: #818181;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: .3s;
+        }
+        .back-button:hover{
+            color: #f1f1f1;
+            background-color: #818181;
+        }
+        .fechar-button{
+            position: absolute;
+            color: #818181;
+            top: 10px;
+            left: 90px;
+            font-size: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: .3s;
+        }
+        .fechar-button:hover{
+            color: #f1f1f1;
+            background-color: #818181;
+        }
+    </style>
+    <title>Menu Lateral</title>
+</head>
+<body>
+    <div class="menu-btn" id="burguer-btn">&#9776; Menu</div>
+
+    <div class="side-bar" id="main-menu">
+        <a href="#">Página Inicial</a>
+        <a href="#" id="escola-btn">Escola
+            <span class="material-symbols-outlined">chevron_right</span>
+        </a>
+        <a href="#">Eventos</a>
+        <a href="#" id="cursos-btn">
+            Cursos
+            <span class="material-symbols-outlined">chevron_right</span>
+        </a>
+        <button id="fechar-menu" class="fechar-button">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+
+    <div class="side-bar" id="escola-submenu">
+        <a href="#">Sobre a escola</a>
+        <a href="#">Dicas para novos alunos</a>
+        <button id="voltar-escola" class="back-button">
+            <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <button id="fechar-menu-escola" class="fechar-button">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+        
+    <div class="side-bar" id="cursos-submenu">
+        <a href="#">Química</a>
+        <a href="#">Secretariado</a>
+        <a href="#">Têxtil</a>
+        <a href="#">Vestuário</a>
+        <a href="#">Desenvolvimento de Sistemas</a>
+        <button id="voltar-cursos" class="back-button">
+            <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <button id="fechar-menu-cursos" class="fechar-button">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+    <script>
+        document.getElementById('burguer-btn').addEventListener('click', function(){
+            document.getElementById("main-menu").style.width = '250px';
+        });
+
+        document.getElementById("escola-btn").addEventListener("click", function() {
+            document.getElementById("escola-submenu").style.width = "250px";
+        });
+
+        document.getElementById('cursos-btn').addEventListener('click', function(){
+            document.getElementById('cursos-submenu').style.width = '250px';
+        });
+
+        document.getElementById('fechar-menu').addEventListener('click', function(){
+            document.getElementById('main-menu').style.width = '0'
+        })
+
+        document.getElementById('fechar-menu-escola').addEventListener('click', function(){
+            document.getElementById('escola-submenu').style.width = '0'
+        })
+
+        document.getElementById('fechar-menu-cursos').addEventListener('click', function(){
+            document.getElementById('cursos-submenu').style.width = '0'
+        })
+
+        document.getElementById('voltar-escola').addEventListener('click', function(){
+            document.getElementById('escola-submenu').style.width = '0';
+            document.getElementById('main-menu').style.width = '250px'
+        });
+
+        document.getElementById('voltar-cursos').addEventListener('click', function(){
+            document.getElementById('cursos-submenu').style.width = '0';
+            document.getElementById('main-menu').style.width = '250px'
+        });
+
+        document.querySelectorAll('.side-bar').forEach(function(sidebar){
+            sidebar.addEventListener('mouseleave', function(){
+                sidebar.style.width = '0';
+            });
+        });
+    </script>
+</body>
+</html>

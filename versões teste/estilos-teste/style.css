@@ -17,102 +17,97 @@ html, body{
     margin: 0px;
 }
 
-input {
-    display: none;
-}
-
-label {
-    width: 100%;
+.side-bar{
     height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 60px;
 }
-
-.menu {
-    position: relative;
-    background-color: #238C3D;
-    width: 100%;
-    height: 50px;
-}
-
-.menu:hover{
-    background-color: white;
-}
-
-.burguer {
+.side-bar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
     display: block;
-    margin: auto;
-    background: black;
-    width: 20px;
-    height: 2px;
-    position: relative;
-    top: 25px;
-    transition: .5s ease-in-out;
+    margin: 20px 0px;
+    transition: .3s;
 }
-
-.burguer::after,
-.burguer::before {
-    content: ' ';
-    background-color: black;
-    width: 20px;
-    height: 2px;
+.side-bar a:hover{
+    color: #f1f1f1;
+}
+.side-bar .close-btn{
     position: absolute;
-    transition: .5s ease-in-out;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
 }
-
-.burguer::after {
-    bottom: 5px;
+.menu-btn{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #111;
+    color: #818181;
 }
-
-.burguer::before {
+.menu-btn:hover{
+    color: #f1f1f1;
+}
+.material-symbols-outlined{
+    position: relative;
     top: 5px;
 }
-
-input:checked ~ label .burguer {
-    transform: rotate(45deg);
-    transition: .5s ease-in-out;
+.back-button{
+    position: absolute;
+    color: #818181;
+    padding-bottom: 4px;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s;
 }
-
-input:checked ~ label .burguer::after {
-    transform: rotate(90deg);
-    transition: .5s ease-in-out;
-    bottom: 0;
+.back-button:hover{
+    color: #f1f1f1;
+    background-color: #818181;
 }
-
-input:checked ~ label .burguer::before {
-    transform: rotate(90deg);
-    transition: .5s ease-in-out;
-    top: 0;
+.fechar-button{
+    position: absolute;
+    color: #818181;
+    padding-bottom: 4px;
+    top: 10px;
+    left: 90px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s;
 }
-
-:root{
-    --numero-de-itens: 5;
+.fechar-button:hover{
+    color: #f1f1f1;
+    background-color: #818181;
 }
-input:checked ~ #lista{
-    max-height: calc(40px * var(--numero-de-itens));
-}
-#lista {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-}
-
-#lista li {
-    display: block;
-    text-align: center;
-    position: relative;
+.sublista-media{
+    display: none;
     background-color: #79ACD9;
-    border: 1px solid #3E82CB;
-    padding: 10px;
-    opacity: 1;
-    transition: 0.5s ease-in-out;
 }
-
-#lista li:hover{
-    background-color: black;
-    color: white;
-}
-
-#lista a{
-    text-decoration: none; 
+.options{
+    overflow: hidden;
+    opacity: 0;
+    display: none;
 }
 
 #texto{
@@ -146,7 +141,6 @@ input:checked ~ #lista{
 
 #logo img{
     display: block;
-    width: auto;
     width: 100%;
 }
 

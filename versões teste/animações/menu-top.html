@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu de Topo</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin-right: 20px;
+    position: relative;
+  }
+  nav ul li:hover ul {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+  }
+  nav ul li ul li {
+    margin-top: 5px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #ff0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Página Inicial</a></li>
+    <li>
+      Escola
+      <ul>
+        <li><a href="#">Sobre a Escola</a></li>
+        <li><a href="#">Corpo Docente</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Eventos</a></li>
+    <li><a href="#">Cursos</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

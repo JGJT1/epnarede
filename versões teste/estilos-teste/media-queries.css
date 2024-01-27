@@ -20,35 +20,57 @@ Grandes telas: 1200px
     main p{
         padding: 0% 15%;
     }
-
-    .menu{
-        display: block;
-        height: 100%;
-        background-color: #79ACD9;
-    }
-    .menu:hover{
-        background-color: #79ACD9;
-    }
-    
-    .burguer{
+    .menu-btn{
         display: none;
     }
-    #lista{
-        background-color: #79ACD9;
-        text-align: center;
+    .sublista-media{
         display: block;
+        font-size: 20px;
+        height: auto;
+        z-index: 1;
+        transition: opacity .3s ease;
+    }
+    .sublista-media > ul{
+        display: flex;
+        justify-content: space-evenly;
+        height: 40px;
+        list-style-type: none;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .sublista-media > ul > li{
+        font-size: 20px;
+        transition: .3s;
+    }
+    .sublista-media > ul > li:hover{
+        color: white;
+    }
+    .sublista-media a{
+        text-decoration: none;
+    }
+    .option-cursos span,
+    .option-escola span{
+        padding-bottom: 20px;
+    }
+    .option-escola:hover .options-escola,
+    .option-cursos:hover .options-cursos{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        z-index: 2;
+        list-style-type: none;
+        width: 165px;
         opacity: 1;
-        max-height: 200px;
     }
-    #lista li{
-        display: inline-block;
+    .options{
         text-align: center;
-        border-radius: 40px;
-        border: none;
-        margin: 0px 20px;
+        margin-left: -50px;
+        font-size: 20px;
+        margin-top: 18px;
     }
-    #lista li:hover{
-        background-color: #739FCE;
+    .options li{
+        padding: 10px 0;
     }
 }
 
@@ -59,35 +81,56 @@ Grandes telas: 1200px
     main p{
         padding: 0% 15%;
     }
-
-    .menu{
-        display: block;
-        height: 100%;
-        background-color: #79ACD9;
-    }
-    .menu:hover{
-        background-color: #79ACD9;
-    }
-    
-    .burguer{
+    .menu-btn{
         display: none;
     }
-    #lista{
-        background-color: #79ACD9;
-        text-align: center;
+    .sublista-media{
         display: block;
+        height: auto;
+        z-index: 1;
+        transition: opacity .3s ease;
+    }
+    .sublista-media > ul{
+        display: flex;
+        justify-content: space-evenly;
+        height: 40px;
+        list-style-type: none;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .sublista-media > ul > li{
+        font-size: 20px;
+        transition: .3s;
+    }
+    .sublista-media > ul > li:hover{
+        color: white;
+    }
+    .sublista-media a{
+        text-decoration: none;
+    }
+    .option-cursos span,
+    .option-escola span{
+        padding-bottom: 20px;
+    }
+    .option-escola:hover .options-escola,
+    .option-cursos:hover .options-cursos{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        z-index: 2;
+        list-style-type: none;
+        width: 165px;
         opacity: 1;
-        max-height: 200px;
     }
-    #lista li{
-        display: inline-block;
+    .options{
         text-align: center;
-        border-radius: 40px;
-        border: none;
-        margin: 0px 20px;
+        margin-left: -50px;
+        font-size: 20px;
+        margin-top: 18px;
     }
-    #lista li:hover{
-        background-color: #739FCE;
+    .options li{
+        padding: 10px 0;
     }
 }
 
@@ -95,43 +138,66 @@ Grandes telas: 1200px
     header{
         background-image: linear-gradient(to top , #94b0ce, #1b80d8);
     }
+    #logo img{
+        height: 720px;
+        width: auto;
+    }
     #texto{
         font-size: 1.5em;
     }
     main p{
         padding: 0% 15%;
     }
-
-    .menu{
-        display: block;
-        height: 100%;
-        background-color: #79ACD9;
-    }
-    .menu:hover{
-        background-color: #79ACD9;
-    }
-    #logo img{
-        height: 740.4px;
-        width: auto;
-    }
-    .burguer{
+    .menu-btn{
         display: none;
     }
-    #lista{
-        background-color: #79ACD9;
-        text-align: center;
+    .sublista-media{
         display: block;
+        height: auto;
+        z-index: 1;
+        transition: opacity .3s ease;
+    }
+    .sublista-media > ul{
+        display: flex;
+        justify-content: space-evenly;
+        height: 40px;
+        list-style-type: none;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .sublista-media > ul > li{
+        font-size: 20px;
+        border-radius: 20px;
+        transition: .3s;
+    }
+    .sublista-media > ul > li:hover{
+        color: white;
+    }
+    .sublista-media a{
+        text-decoration: none;
+    }
+    .option-cursos span,
+    .option-escola span{
+        padding-bottom: 20px;
+    }
+    .option-escola:hover .options-escola,
+    .option-cursos:hover .options-cursos{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        z-index: 2;
+        list-style-type: none;
+        width: 165px;
         opacity: 1;
-        max-height: 200px;
     }
-    #lista li{
-        display: inline-block;
+    .options{
         text-align: center;
-        border-radius: 40px;
-        border: none;
-        margin: 0px 20px;
+        margin-left: -50px;
+        font-size: 20px;
+        margin-top: 18px;
     }
-    #lista li:hover{
-        background-color: #739FCE;
+    .options li{
+        padding: 10px 0;
     }
 }

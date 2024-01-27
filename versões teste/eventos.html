@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="estilos-teste/style.css">
+    <link rel="stylesheet" href="estilos-teste/media-queries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="script.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
@@ -17,21 +18,70 @@
 </head>
 <body onresize="mudouTam()">
     <header>
-        <section class="corpo1">
-            <input id="in-burguer" type="checkbox">
-            <label for="in-burguer">
-            <div class="menu" onclick="ajustarPadding()">
-                <span class="burguer"></span>
-            </div>
-            </label>
-                <ul id="lista">
-                    <li><a href="index.html">Página inicial</a></li>
-                    <li><a href="escola.html">Escola</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="corpo_docente.html">Corpo docente</a></li>
-                </ul>
-        </section>
+        <div class="menu-btn" id="burguer-btn">&#9776; Menu</div>
+
+        <div class="side-bar" id="main-menu">
+            <a href="index.html">Página Inicial</a>
+            <a href="#" id="escola-btn">Escola
+                <span class="material-symbols-outlined">chevron_right</span>
+            </a>
+            <a href="eventos.html">Eventos</a>
+            <a href="#" id="cursos-btn">
+                Cursos
+                <span class="material-symbols-outlined">chevron_right</span>
+            </a>
+            <button id="fechar-menu" class="fechar-button">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div class="side-bar" id="escola-submenu">
+            <a href="escola.html">Sobre a escola</a>
+            <a href="corpo_docente.html">Corpo Docente</a>
+            <a href="#">Dicas para novos alunos</a>
+            <button id="voltar-escola" class="back-button">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button id="fechar-menu-escola" class="fechar-button">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+            
+        <div class="side-bar" id="cursos-submenu">
+            <a href="cursos.html">Química</a>
+            <a href="cursos.html">Secretariado</a>
+            <a href="cursos.html">Têxtil</a>
+            <a href="cursos.html">Vestuário</a>
+            <a href="cursos.html">Desenvolvimento de Sistemas</a>
+            <button id="voltar-cursos" class="back-button">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button id="fechar-menu-cursos" class="fechar-button">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <div class="sublista-media">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li class="option-escola"><span>Escola</span>
+                    <ul class="options options-escola">
+                        <li><a href="escola.html">Sobre a escola</a></li>
+                        <li><a href="corpo_docente.html">Corpo Docente</a></li>
+                        <li><a href="">Dicas para novos estudantes</a></li>
+                    </ul>
+                </li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li class="option-cursos"><span>Cursos</span>
+                    <ul class="options options-cursos">
+                        <li><a href="cursos.html">Química</a></li>
+                        <li><a href="cursos.html">Secretariado</a></li>
+                        <li><a href="cursos.html">Têxtil</a></li>
+                        <li><a href="cursos.html">Vestuário</a></li>
+                        <li><a href="cursos.html">Desenvolvimento de Sistemas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -127,5 +177,6 @@
     <footer>
         <p>[Epnarede@gmail.com] | [@epmariacarmemoficial]</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
