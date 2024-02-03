@@ -38,3 +38,10 @@ document.getElementById('voltar-cursos').addEventListener('click', function(){
     document.getElementById('cursos-submenu').style.width = '0';
     document.getElementById('main-menu').style.width = '250px'
 });
+function mudouTam(){
+    if (window.innerWidth >= 768){
+        document.getElementById('main-menu').style.width = '0';
+        document.getElementById('escola-submenu').style.width = '0';
+        document.getElementById('cursos-submenu').style.width = '0';
+    }
+}
