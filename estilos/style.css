@@ -222,3 +222,31 @@ main h3{
 main h4{
     font-size: 1.4em;
 }
+.form{
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    width: 70vw;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.482);
+    background-color: #79acd9;
+}
+#nome,
+#email,
+#mensagem{
+    background-color: white;
+    width: 70%;
+    color: inherit;
+    border: none;
+    padding: 5px;
+}
+#enviar{
+    border: 1px solid #fff;
+    background-color: inherit;
+    width: 70%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#enviar:hover{
+    background-color: #fff;
+}
