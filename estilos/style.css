@@ -250,3 +250,15 @@ main h4{
 #enviar:hover{
     background-color: #fff;
 }
+.news img{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    width: 90%;
+    height: auto;
+}
+.news h2{
+    position: relative;
+    background-color: inherit;
+    margin: 0 15px;
+}

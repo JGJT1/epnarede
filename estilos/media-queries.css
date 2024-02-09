@@ -24,6 +24,17 @@ Grandes telas: 1200px
         padding: 10px 15%;
         font-size: 18px;
     }
+    .news{
+        display: flex;
+    }
+    .news img{
+        height: 200px;
+        width: auto;
+        margin-left: 10px;
+    }
+    .news h2{
+        top: 35px;
+    }
     .menu-btn{
         display: none;
     }
@@ -91,6 +102,17 @@ Grandes telas: 1200px
     main p{
         padding: 10px 15%;
         font-size: 20px;
+    }
+    .news{
+        display: flex;
+    }
+    .news img{
+        height: 200px;
+        width: auto;
+        margin-left: 10px;
+    }
+    .news h2{
+        top: 35px;
     }
     .menu-btn{
         display: none;
@@ -162,6 +184,17 @@ Grandes telas: 1200px
     main p{
         padding: 15px 15%;
         font-size: 26px;
+    }
+    .news{
+        display: flex;
+    }
+    .news img{
+        height: 200px;
+        width: auto;
+        margin-left: 10px;
+    }
+    .news h2{
+        top: 35px;
     }
     .menu-btn{
         display: none;
