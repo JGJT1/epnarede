@@ -266,3 +266,9 @@ main h4{
     background-color: inherit;
     margin: 0 15px;
 }
+#imagens_pag01 img{
+    width: 100%;
+    max-height: 710px;
+    max-width: 710px;
+    background-size: cover;
+}
