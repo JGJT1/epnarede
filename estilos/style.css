@@ -272,3 +272,64 @@ main h4{
     max-width: 710px;
     background-size: cover;
 }
+.back_img{
+    height: 710px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.back_img h2{
+    color: #ffffffdd;
+    font-size: 40px;
+    display: flex;
+    background-color: #00000080;
+    width: 100%;
+    height: 690px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#fectec{
+    background-image: url(../imagens/eventos/fectec1.jpg);
+    background-position: center top;
+}
+#oficina{
+    background-image: url(../imagens/eventos/oficina_dos_sonhos1.jpg);
+    background-position: 70% center;
+}
+#interclasse{
+    background-image: url(../imagens/eventos/interclasse2.jpg);
+    background-position: center 35%;
+}
+#alunos_que_inspiram{
+    background-image: url(../imagens/eventos/alunos_que_inspiram1.jpg);
+    background-position: center 40%;
+}
+#projeto_agua{
+    background-image: url(../imagens/eventos/projeto_agua1.jpg);
+}
+#projeto_social{
+    background-image: url(../imagens/eventos/projeto_social1.jpg);
+}
+#trote{
+    background-image: url(../imagens/eventos/trote1.jpg);
+}
+#desfile{
+    background-image: url(../imagens/eventos/desfile2.jpg);
+    background-position: center top;
+}
+#feira{
+    background-image: url(../imagens/eventos/feira3.jpg);
+    background-position: center 30%;
+}
+#halloween{
+    background-image: url(../imagens/eventos/halloween2.jpg);
+    background-position: center 40%;
+}
+#feira_do_empreendedorismo{
+    background-image: url(../imagens/eventos/feira_do_empreendedorismo2.jpg);
+    background-position: center 40%;
+}
+#afrobrasis{
+    background-image: url(../imagens/eventos/afrobrasis1.jpg);
+}

@@ -24,6 +24,9 @@ Grandes telas: 1200px
         padding: 10px 15%;
         font-size: 18px;
     }
+    .back_img h2{
+        font-size: 86px;
+    }
     .news{
         display: flex;
     }
@@ -95,6 +98,9 @@ Grandes telas: 1200px
 @media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
     #texto{
         font-size: 1.5em;
+    }
+    .back_img h2{
+        font-size: 110px;
     }
     main h2{
         font-size: 30px;
@@ -174,6 +180,9 @@ Grandes telas: 1200px
     #logo img{
         height: 720px;
         width: auto;
+    }
+    .back_img h2{
+        font-size: 150px;
     }
     #texto{
         font-size: 1.5em;
