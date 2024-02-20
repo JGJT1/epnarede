@@ -38,13 +38,14 @@ html, body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
-    color: #818181;
+    color: #fff;
     display: block;
     margin: 20px 0px;
     transition: .3s;
 }
 .side-bar a:hover{
     color: #f1f1f1;
+    background-color: #818181;
 }
 .side-bar .close-btn{
     position: absolute;
@@ -58,10 +59,10 @@ html, body{
     cursor: pointer;
     padding: 10px;
     background-color: #111;
-    color: #818181;
+    color: #fff;
 }
 .menu-btn:hover{
-    color: #f1f1f1;
+    color: #818181;
 }
 .material-symbols-outlined{
     position: relative;
@@ -69,7 +70,7 @@ html, body{
 }
 .back-button{
     position: absolute;
-    color: #818181;
+    color: #fff;
     padding-bottom: 4px;
     top: 10px;
     left: 10px;
@@ -88,7 +89,7 @@ html, body{
 }
 .fechar-button{
     position: absolute;
-    color: #818181;
+    color: #fff;
     padding-bottom: 4px;
     top: 10px;
     left: 90px;
