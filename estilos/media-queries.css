@@ -17,6 +17,12 @@ Grandes telas: 1200px
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px){/*Tablet*/
+    #texto{
+        align-items: flex-end;
+    }
+    #texto h1{
+        margin-right: 140px;
+    }
     main h2{
         font-size: 30px;
     }
@@ -98,6 +104,10 @@ Grandes telas: 1200px
 @media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
     #texto{
         font-size: 1.5em;
+        align-items: flex-end;
+    }
+    #texto h1{
+        margin-right: 130px;
     }
     .back_img h2{
         font-size: 110px;
@@ -177,15 +187,23 @@ Grandes telas: 1200px
     header{
         background-color: #16191E;
     }
-    #logo img{
-        height: 720px;
-        width: auto;
+    #logo{
+        background-image: url("../imagens/pagina_inicial/logo_EP_na_Rede.jpg");
+        position: relative;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .back_img h2{
         font-size: 150px;
     }
     #texto{
-        font-size: 1.5em;
+        background-color: inherit;
+        font-size: 1.8em;
+        align-items: flex-end;
+    }
+    #texto h1{
+        margin-right: 160px;
     }
     main h2{
         font-size: 35px;

@@ -134,26 +134,21 @@ html, body{
 #texto h1{
     font-size: 3em;
     margin: 39.84px;
+    text-align: right;
 }
 
 #texto h2{
     font-style: italic;
     font-family: serif;
+    text-align: right;
 }
 
 #logo{
     background-image: url("../imagens/pagina_inicial/logo_EP_na_Rede.jpg");
     position: relative;
-    height: 700px;
+    height: 500px;
     background-repeat: no-repeat;
-    background-position: 50% 70%;
     background-size: contain;
-}
-
-#logo img{
-    display: block;
-    width: auto;
-    width: 100%;
 }
 
 main h1{
