@@ -142,7 +142,12 @@ html, body{
 }
 
 #logo{
+    background-image: url("../imagens/pagina_inicial/logo_EP_na_Rede.jpg");
     position: relative;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: contain;
 }
 
 #logo img{

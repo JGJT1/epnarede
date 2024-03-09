@@ -175,7 +175,7 @@ Grandes telas: 1200px
 
 @media screen and (min-width: 1200px){/*Telas Grandes*/
     header{
-        background-image: linear-gradient(to top , #94b0ce, #1b80d8);
+        background-color: #16191E;
     }
     #logo img{
         height: 720px;
@@ -230,6 +230,10 @@ Grandes telas: 1200px
     .sublista-media > ul > li:hover{
         color: white;
     }
+    .sublista-media > ul > li > ul > li:hover{
+        background-color: lightgray;
+        color: #000;
+    }
     .sublista-media a{
         text-decoration: none;
     }
@@ -256,5 +260,9 @@ Grandes telas: 1200px
     }
     .options li{
         padding: 10px 0;
+    }
+    .options a{
+        height: 30px;
+        width: 50px;
     }
 }
