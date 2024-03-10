@@ -205,6 +205,9 @@ Grandes telas: 1200px
     #texto h1{
         margin-right: 160px;
     }
+    #texto h2{
+        margin-right: 69px;
+    }
     main h2{
         font-size: 35px;
     }
